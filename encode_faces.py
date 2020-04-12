@@ -1,4 +1,4 @@
-# python encode_faces.py --dataset dataset --encodings encodings.pickle
+# Run this on terminal: python encode_faces.py --dataset dataset --encodings encodings.pickle
 
 from imutils import paths
 import face_recognition
