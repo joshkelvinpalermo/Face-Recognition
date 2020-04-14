@@ -6,3 +6,9 @@
 * face_recognition is simply a face recognition API for Python.
 
 So, what the script does is ```encode_faces.py``` creates a 128-d vector for the dataset, serializes it, then outputs a pickle file. ```recognize_faces_image.py``` and ```recognize_faces_video.py``` detects the faces from the loaded images and video streams then tries to find matches based from the pickle file.
+
+Detection method was set on **HOG (Horizontal of Oriented Gradients)** due to technical issues, sacrificing accuracy in the process. It is best to use **CNN (Convolutional Neural Network)** if it is going to be for a full scale project.
+
+I made this on a Windows OS, so I compiled **dlib** myself. Instructions are as follows:
+1. Install **CMake**.
+2. Download **dlib**
