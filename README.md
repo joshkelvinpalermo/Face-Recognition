@@ -10,5 +10,8 @@ So, what the script does is ```encode_faces.py``` creates a 128-d vector for the
 Detection method was set on **HOG (Horizontal of Oriented Gradients)** due to technical issues, sacrificing accuracy in the process. It is best to use **CNN (Convolutional Neural Network)** if it is going to be for a full scale project.
 
 I made this on a Windows OS, so I compiled **dlib** myself. Instructions are as follows:
-1. Install **CMake**.
-2. Download **dlib**
+1. Install **CMake**
+2. Download **dlib** from https://github.com/davisking/dlib
+3. Run ```python setup.py install``` from project directory.
+
+*All thanks goes to Adrian Rosebrock of PyImageSearch*
