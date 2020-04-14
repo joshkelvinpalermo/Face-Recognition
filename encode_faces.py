@@ -1,4 +1,4 @@
-# Run this on terminal: python encode_faces.py --dataset dataset --encodings encodings.pickle
+# python encode_faces.py --dataset dataset --encodings encodings.pickle
 
 from imutils import paths
 import face_recognition
@@ -13,7 +13,7 @@ ap.add_argument("-i", "--dataset", required=True,
     help = "path to input directory of faces and images")
 ap.add_argument("-e", "--encodings", required=True,
     help = "path to serialized db of facial encodings")
-ap.add_argument("-d", "--detection-method", type=str, default="cnn",
+ap.add_argument("-d", "--detection-method", type=str, default="hog",
     help = "face detection model to use: either hog or cnn")
 args = vars(ap.parse_args())
 
