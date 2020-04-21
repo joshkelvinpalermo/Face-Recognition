@@ -12,6 +12,7 @@ Detection method was set on **HOG (Horizontal of Oriented Gradients)** due to te
 I made this on a Windows OS, so I compiled **dlib** myself. Instructions are as follows:
 1. Install **CMake**
 2. Download **dlib** from https://github.com/davisking/dlib
-3. Run ```python setup.py install``` from project directory.
+3. Make sure you have **C++ Build Tools** installed from Visual Studio.
+4. Run ```python setup.py install``` from project directory.
 
-*All thanks goes to Adrian Rosebrock of PyImageSearch*
+*Reference: PyImageSearch, Deep Learning and Facial Recognition with OpenCV, dlib, and face_recognition*
